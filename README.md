@@ -25,3 +25,17 @@ In some login forms, servers return different messages depending on whether an e
 
 ```bash
 python3 verboseLogin.py <email_list_file>
+
+---
+## 📚 Wordlist Suggestions
+
+You can use pre-made username/email lists from the following GitHub repository:
+
+🔗 **nyxgeek/username-lists**  
+https://github.com/nyxgeek/username-lists/tree/master/usernames-top100
+
+Download a file (e.g. `usernames.txt`) and use it as input:
+```bash
+wget https://raw.githubusercontent.com/nyxgeek/username-lists/master/usernames-top100/usernames.txt -O usernames.txt
+
+
