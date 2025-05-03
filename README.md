@@ -23,9 +23,11 @@ Some login systems return different error messages for **valid** vs. **invalid**
 
 ---
 
-## 🚀 Usage
+## 📚 Wordlist Suggestions
 
-```bash
-python3 verboseLogin.py <email_list_file> 
+You can use pre-made username/email lists from the following GitHub repository:
+
+🔗 **nyxgeek/username-lists**  
+https://github.com/nyxgeek/username-lists/tree/master/usernames-top100
 
 ---
