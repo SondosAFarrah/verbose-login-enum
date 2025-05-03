@@ -1,48 +1,30 @@
-# 🛡️ Verbose Login Email Enumerator
+# 🛡️ Verbose Login Email Enumerator  
 
-This Python script automates the process of enumerating valid email addresses by interacting with a **verbose login endpoint** that leaks error messages, commonly found in Capture The Flag (CTF) labs or vulnerable web applications.
-
----
-
-## 📌 Purpose
-
-In some login forms, servers return different messages depending on whether an email/username exists or not. This script takes advantage of that to distinguish between **valid** and **invalid** email addresses.
+A Python script to automate email enumeration by exploiting verbose login endpoints that leak error messages. Ideal for CTF challenges and security testing.  
 
 ---
 
-## 🔧 How It Works
+## 📌 Purpose  
 
-- Sends a POST request to the login endpoint with a target email and dummy password.
-- Parses the JSON response.
-- Based on the error message, determines whether the email exists.
-- Useful for:
-  - CTF challenges (like TryHackMe or Hack The Box)
-  - Security testing labs with verbose login messages
-
+Some login systems return different error messages for **valid** vs. **invalid** emails. This script exploits this behavior to:  
+✔ Identify registered email addresses.  
+✔ Test for insecure login forms in web apps or CTF labs (e.g., TryHackMe, Hack The Box).  
 
 ---
 
-## 📌 Purpose
+## 🔧 How It Works  
 
-In some login forms, servers return different messages depending on whether an email/username exists or not. This script takes advantage of that to distinguish between **valid** and **invalid** email addresses.
+1. **Sends a POST request** to the target login endpoint with:  
+   - A test email (from your wordlist).  
+   - A dummy password.  
+2. **Analyzes the response**:  
+   - Checks for differences in error messages (e.g., "Invalid password" vs. "User not found").  
+   - Flags valid emails based on the server’s feedback.  
 
 ---
-## 🚀 Usage
 
+## � Usage  
+
+### Basic Command  
 ```bash
 python3 verboseLogin.py <email_list_file>
-
-
-## 📚 Wordlist Suggestions
-
-You can use pre-made username/email lists from the following GitHub repository:
-
-🔗 **nyxgeek/username-lists**  
-https://github.com/nyxgeek/username-lists/tree/master/usernames-top100
-
-Download a file (e.g. `usernames.txt`) and use it as input:
-```bash
-wget https://raw.githubusercontent.com/nyxgeek/username-lists/master/usernames-top100/usernames.txt -O usernames.txt
-
----
-
