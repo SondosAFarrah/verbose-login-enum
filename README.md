@@ -20,7 +20,13 @@ In some login forms, servers return different messages depending on whether an e
   - Security testing labs with verbose login messages
 
 
+---
 
+## 📌 Purpose
+
+In some login forms, servers return different messages depending on whether an email/username exists or not. This script takes advantage of that to distinguish between **valid** and **invalid** email addresses.
+
+---
 ## 🚀 Usage
 
 ```bash
@@ -39,3 +45,4 @@ Download a file (e.g. `usernames.txt`) and use it as input:
 wget https://raw.githubusercontent.com/nyxgeek/username-lists/master/usernames-top100/usernames.txt -O usernames.txt
 
 ---
+
