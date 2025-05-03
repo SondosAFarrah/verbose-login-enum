@@ -31,3 +31,10 @@ You can use pre-made username/email lists from the following GitHub repository:
 https://github.com/nyxgeek/username-lists/tree/master/usernames-top100
 
 ---
+
+## 🚀 Usage
+
+```bash
+python3 verboseLogin.py <email_list_file>
+
+---
