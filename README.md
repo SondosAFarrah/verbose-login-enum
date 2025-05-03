@@ -23,8 +23,9 @@ Some login systems return different error messages for **valid** vs. **invalid**
 
 ---
 
-## � Usage  
+## 🚀 Usage
 
-### Basic Command  
 ```bash
-python3 verboseLogin.py <email_list_file>
+python3 verboseLogin.py <email_list_file> 
+
+---
